@@ -85,13 +85,20 @@ public class IgrfCalculate {
 	}
 	
 	/**
+	 * geodetic和geocentri两个坐标算出来的值是一样的
 	public static void main(String[] args) throws MWException{
 		double time=1.356998400978E12;
 		
-		IgrfCalculate ic=new IgrfCalculate(time,-60,180,0);
-		float[] b=ic.getBvalue3();
-		for(int i=0;i<b.length;i++){
-			System.out.println(b[i]);
+		IgrfCalculate ic1=new IgrfCalculate(time,-60,180,0);
+		float[] b1=ic1.getBvalue3();
+		for(int i=0;i<b1.length;i++){
+			System.out.println(b1[i]);
+		}
+		
+		IgrfCalculate ic2=new IgrfCalculate(time,-60,180,0,"geocentric");
+		float[] b2=ic2.getBvalue3();
+		for(int i=0;i<b2.length;i++){
+			System.out.println(b2[i]);
 		}
 	}*/
 
