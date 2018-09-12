@@ -1,0 +1,2 @@
+# JAVA_IGRF_Test
+JAVA调用MATLAB写的IGRF测试
